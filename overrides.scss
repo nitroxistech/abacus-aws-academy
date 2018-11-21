@@ -1,0 +1,260 @@
+$blue : rgb(11, 78, 162);
+$green_dark : rgb(77, 184, 72);
+$green : rgb(141, 198, 63);
+
+$grey: #eee;
+
+$slider-height: 530px;
+$amount-to-add: 60;
+
+.body-content{
+  p {
+    color: #111;
+    font-weight: 300;
+  }
+}
+#owl-slider {
+  position: relative;
+  .owl-controls{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+  }
+  .owl-pagination {
+    bottom: 0;
+  }
+}
+
+
+
+.owl-carousel {
+  .slide{
+    height: $slider-height !important;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    button{
+      padding: 5px 20px;
+      background: #fff !important;
+      border: none;
+      border-radius: 8px;
+      color: $blue;
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-top: 20px;
+    }
+    
+    .content-behind{
+      background: fade-out($color: $blue, $amount: 0.1);
+      position: absolute;
+      top: 0% - ($amount-to-add / 2);
+      width: 40%;
+      height: 100% + $amount-to-add;
+      border-top-right-radius: 100%;
+      border-bottom-right-radius: 100%;
+      box-shadow: 0 0 0 10px fade-out($color: #fff, $amount: 0.8);
+      box-sizing: content-box;
+    }
+    .content{
+      bottom: 100px;
+      left: 50px;
+      position: absolute;
+      max-width: 32%;
+    }
+    h1{
+      position: relative;
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 0px;
+    }
+    p{
+      color: white;
+      font-size: 20px;
+      font-weight: light;
+    }
+  }
+}
+
+.about-section {
+  background: $grey;
+
+  .eq-h{
+    display: flex;
+  }  
+  .about-box{
+    width: 50%;
+    background: white;
+    box-shadow: 0 0 4px #ddd;
+    padding: 20px;
+    margin: 20px;
+    transition: 0.3s ease background;
+    &:hover {
+      background: #f2f2f2;
+    }
+    h3 {
+      color: $green;
+      text-align: center;
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
+  .heading-btn{
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: $blue;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: white;
+    margin-left: 60px;
+  }
+  ul{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    list-style: none;
+    li {
+      border-bottom: 1px solid $grey;
+      padding: 10px 0;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.dark-section-red-area{
+  background: #eee;
+  color: white;
+  padding: 80px 0 30px;
+  .dark-section-red-area *{
+    color: white !important;
+  }
+}
+
+.text-center{
+  text-align: center !important;
+}
+.post-single .post-desk {
+  height: auto;
+}
+.p-read-more {
+  color: $blue;
+  font-size: 14px !important;
+  font-weight: 400;
+  & i{
+    position: relative;
+  }
+}
+
+.journeyGraph {
+  background: #000;
+  .col-md-12{
+    position: relative;
+  }
+  .links {
+    .link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #fff;
+      display: inline-block;
+      color: #111;
+      border-radius: 20px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      &-1 {
+        left: 9.5%;
+        top: 53%;
+      }
+      &-2 {
+        left: 9.5%;
+        top: 88%;
+      }
+      &-2-5 {
+        left: 28%;
+        top: 25%;
+      }
+      &-3 {
+        left: 54.5%;
+        top: 25%;
+      }
+      &-4 {
+        left: 35.5%;
+        top: 25%;
+      }
+      &-5 {
+        left: 54.5%;
+        top: 25%;
+      }
+      &-6 {
+        left: 35.5%;
+        top: 63%;
+      }
+      &-7 {
+        left: 54.5%;
+        top: 63%;
+      }
+      &-8 {
+        left: 78.5%;
+        top: 26%;
+      }
+      &-9 {
+        left: 78.5%;
+        top: 65%;
+      }
+
+    }
+  }
+  @media (max-width: 720px) {
+    .links {
+      display: none;
+    }
+  }
+}
+
+
+////////////////////// COURSES PAGE
+
+#courses {
+  h2{
+    color: $blue;
+  }
+  h3{
+    color: $green_dark;
+  }
+  padding-bottom: 50px;
+}
+.course-details-box{
+  border-left: 1px solid $green;
+  padding-left: 20px;
+}
+.course-box {
+  margin: 25px 0;
+  padding: 20px;
+  box-shadow: 0 0 4px #aaa;
+  &:first-child{
+    margin-top: 0;
+  }
+  h3 {
+    font-weight: bold;
+    font-size: 18px;
+    color: $green_dark;
+  }
+  .btn {
+    background: $blue;
+  }
+  p{
+    margin-bottom: 30px;
+  }
+  tr:first-child td{
+    border-top: none;
+  }
+}

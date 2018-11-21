@@ -1,0 +1,62 @@
+﻿.testimonial li {
+    position: relative;
+    float: left;
+     height: auto !important; 
+    padding: 40px;
+}
+
+
+
+
+.price-col ul li{
+    color: white !important;
+}
+
+.owl-buttonss{
+    display:none !important;
+}
+
+.journeyGraph{
+     background-image: url("../img/parallax/13.jpg");
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    background-position: 50% 50%; 
+    background-size: cover;
+}
+
+.myBulletList{
+    text-align:justify;
+}
+.myBulletList li{
+    margin:8px;
+}
+
+.glance-span-highlight{
+    font-weight:bold;
+}
+
+/*.FirstBannerImage{
+
+     background-image: url("../img/banner/flex/Banner1.jpg");
+     position:relative;
+     height:-webkit-fill-available;
+}
+
+.SecondBannerImage{
+
+     background-image: url("../img/banner/flex/Banner2.jpg");
+     position:relative;
+     height:-webkit-fill-available;
+}
+
+.ThirdBannerImage{
+
+     background-image: url("../img/banner/flex/Banner3.jpg");
+     position:relative;
+     height:-webkit-fill-available;
+}
+
+.p-h{
+    height:700px;
+}*/
+
